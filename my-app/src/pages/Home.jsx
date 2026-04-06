@@ -1,13 +1,9 @@
 import { useState, useEffect, useRef } from "react";
+import Header from "../components/Header";
 import "../css/Home.css";
+import Footer from "../components/Footer";
 
-const NAV_LINKS = [
-  { label: "Résidence temporaire", href: "/residence-temporaire" },
-  { label: "Études", href: "#" },
-  { label: "Travail", href: "#" },
-  { label: "Résidence permanente", href: "/residence-temporaire" },
-  { label: "Consultation", href: "#", cta: true },
-];
+
 
 const SERVICES = [
   {
@@ -78,25 +74,8 @@ export default function Home() {
     <div className="home">
 
       {/* ── NAV ── */}
-      <nav className={`nav${scrolled ? " nav--scrolled" : ""}`}>
-        <div className="nav__inner">
-          <a href="/" className="nav__logo">
-            <span className="logo__a">A2K</span>
-            <span className="logo__sub">IMMIGRATION</span>
-          </a>
-          <div className="nav__links">
-            {NAV_LINKS.map((l) => (
-              <a
-                key={l.label}
-                href={l.href}
-                className={l.cta ? "nav__cta" : "nav__link"}
-              >
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <Header/>
+
 
       {/* ── HERO ── */}
       <section className="hero">
@@ -251,17 +230,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="footer">
-        <div className="footer__inner">
-          <div className="footer__logo">
-            <span className="logo__a">A2K</span>
-            <span className="logo__sub">IMMIGRATION</span>
-          </div>
-          <p className="footer__tagline">Consultant règlementé en immigration · Canada</p>
-          <p className="footer__site">www.a2kimmigration-canada.ca</p>
-        </div>
-      </footer>
+      <Footer/>
 
     </div>
   );
