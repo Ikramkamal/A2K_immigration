@@ -6,7 +6,7 @@ const ConsultationForm = () => {
 
   return (
 
-    <InlineWidget url="https://calendly.com/kamalikram65/consultation-60min" />
+    <InlineWidget url="https://calendly.com/a2kimmigration/consultation-60min" />
   );
 };
 

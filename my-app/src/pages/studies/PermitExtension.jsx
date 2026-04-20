@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../../css/PermitExtension.css";
+
 
 const NAV_LINKS = [
   { label: "Résidence temporaire", href: "/residence-temporaire" },
