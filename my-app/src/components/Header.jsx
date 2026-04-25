@@ -43,6 +43,7 @@ const NAV_LINKS = [
     ],
   },
   { label: "Consultation", href: "/consultation", cta: true },
+  { label: "Commander Votre Rapport", href: "/consultation", cta: true },
 ];
 
 export default function Header() {

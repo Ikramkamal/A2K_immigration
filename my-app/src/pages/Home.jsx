@@ -98,31 +98,15 @@ export default function Home() {
             commence ici.
           </h1>
           <p className="hero__subtitle fade-up" data-delay="2">
-            De la résidence temporaire à la résidence permanente,<br />
-            A2K vous accompagne à chaque étape de votre parcours migratoire.
+            Faites une évaluation de votre profile d'immigration aujourd'hui,<br />
+            et decouvrer vos chances d'acceptation
           </p>
           <div className="hero__actions fade-up" data-delay="3">
-            <a href="#" className="btn--primary">Commencer ma démarche</a>
-            <a href="#" className="btn--ghost">Évaluation gratuite →</a>
+            <a href="/rapport" className="btn--primary">Commander mon rapport de profil d'immigration</a>
           </div>
         </div>
 
-        <div className="hero__stats fade-up" data-delay="4">
-          <div className="stat__item">
-            <span className="stat__num">98%</span>
-            <span className="stat__label">taux d'approbation</span>
-          </div>
-          <div className="stat__divider" />
-          <div className="stat__item">
-            <span className="stat__num">48h</span>
-            <span className="stat__label">rapport d'admissibilité</span>
-          </div>
-          <div className="stat__divider" />
-          <div className="stat__item">
-            <span className="stat__num">+500</span>
-            <span className="stat__label">dossiers traités</span>
-          </div>
-        </div>
+
       </section>
 
       {/* ── SERVICES ── */}
@@ -240,15 +224,14 @@ export default function Home() {
             </div>
             <div className="expert__content">
             <span className="section__tag">Votre consultant</span>
-            <h2 className="expert__name">Prénom Nom</h2>
-            <p className="expert__title">Consultant règlementé en immigration canadienne (RCIC)</p>
+            <h2 className="expert__name">Atik Kamal</h2>
+            <p className="expert__title">Consultant règlementé en immigration canadienne (CRIC)</p>
             <p className="expert__bio">
-                Avec plus de X années d'expérience, je vous accompagne dans toutes les étapes de votre parcours migratoire. Mon approche est personnalisée, transparente et centrée sur vos objectifs.
+                Je vous accompagne dans toutes les étapes de votre parcours d'immigration. Mon approche est personnalisée, transparente et centrée sur vos objectifs.
             </p>
             <ul className="expert__credentials">
-                <li>✦ Membre du Collège des consultants en immigration du Canada (CCIC)</li>
-                <li>✦ Spécialisé en résidence permanente et permis de travail</li>
-                <li>✦ +500 dossiers approuvés</li>
+                <li>✦ Membre du Collège des consultants en immigration du Canada (CCIC). Permis R708012</li>
+                <li>✦ Inscrit au registre québecois des consultants en immigration. Permis 11983</li>
             </ul>
             </div>
         </div>
