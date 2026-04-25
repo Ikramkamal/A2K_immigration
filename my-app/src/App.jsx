@@ -9,6 +9,11 @@ import Home from './pages/Home'
 import Rapport from './pages/Rapport'
 import Consultation from './pages/Consultation'
 
+import PaymentSuccess from "./pages/payment_success";
+
+
+
+
 import './App.css'
 
 function App() {
@@ -27,6 +32,8 @@ function App() {
 
         <Route path="/rapport" element={<Rapport/>} />
         <Route path="/consultation" element={<Consultation/>} />
+
+        <Route path="/payment-success" element={<PaymentSuccess />} />
     
 
 

@@ -144,7 +144,7 @@ app.post("/create-checkout-session", async (req, res) => {
         language_test_file_path: language_test_file_path || "",
         diplomas_file_path: diplomas_file_path || "",
       },
-      success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${process.env.FRONTEND_URL}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.FRONTEND_URL}/rapport`,
     });
 
