@@ -168,7 +168,7 @@ export default function Home() {
               <p className="consult-card__desc">
                 Recevez une analyse détaillée de votre dossier en 48 heures.
               </p>
-              <a href="/consultation/rapport" className="btn--dark">Commencer →</a>
+              <a href="/rapport" className="btn--dark">Commencer →</a>
             </div>
             <div className="consult-card consult-card--featured">
               <div className="consult-card__price">69 $</div>
