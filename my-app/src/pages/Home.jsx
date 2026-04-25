@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import "../css/Home.css";
 import Footer from "../components/Footer";
+import consultant from "../assets/consultant.jpg"
 
 
 
@@ -84,6 +85,7 @@ export default function Home() {
           <div className="hero__accent--1" />
           <div className="hero__accent--2" />
           <div className="hero__grid" />
+          <div className="hero__image-bg" /> 
         </div>
 
         <div className="hero__content">
@@ -229,6 +231,28 @@ export default function Home() {
           <a href="/consultation" className="btn--primary">Prendre rendez-vous</a>
         </div>
       </section>
+
+      {/* ── EXPERT ── */}
+        <section className="expert-section">
+        <div className="expert__inner">
+            <div className="expert__image-wrap">
+            <img src={consultant} alt="Expert A2K Immigration" className="expert__photo" />
+            </div>
+            <div className="expert__content">
+            <span className="section__tag">Votre consultant</span>
+            <h2 className="expert__name">Prénom Nom</h2>
+            <p className="expert__title">Consultant règlementé en immigration canadienne (RCIC)</p>
+            <p className="expert__bio">
+                Avec plus de X années d'expérience, je vous accompagne dans toutes les étapes de votre parcours migratoire. Mon approche est personnalisée, transparente et centrée sur vos objectifs.
+            </p>
+            <ul className="expert__credentials">
+                <li>✦ Membre du Collège des consultants en immigration du Canada (CCIC)</li>
+                <li>✦ Spécialisé en résidence permanente et permis de travail</li>
+                <li>✦ +500 dossiers approuvés</li>
+            </ul>
+            </div>
+        </div>
+        </section>
 
       <Footer/>
 

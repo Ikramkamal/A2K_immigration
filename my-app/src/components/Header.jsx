@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "../css/Header.css"
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
 const NAV_LINKS = [
   {
     label: "Résidence temporaire",
@@ -55,10 +57,9 @@ export default function Header() {
   return (
     <nav className={`nav${scrolled ? " nav--scrolled" : ""}`}>
       <div className="nav__inner">
-        <Link to="/" className="nav__logo">
-          <span className="logo__a">A2K</span>
-          <span className="logo__sub">IMMIGRATION</span>
-        </Link>
+      <Link to="/" className="nav__logo" >
+        <img src={logo} alt="A2K Immigration" style={{ height: "110px", width: "auto", objectFit: "contain" }} />
+      </Link>
 
        
         <div className="nav__links">
